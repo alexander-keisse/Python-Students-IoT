@@ -20,7 +20,6 @@ print(duration, new_line)
 
 # We can use some handy attributes:
 print(f"Days past since birth: {duration.days}")
-print(f"Remaining hours, minutes, seconds converted into seconds: {duration.days}")
 print(f"Duration fully converted into seconds: {duration.total_seconds()}{new_line}")
 
 # Okay, okay enough about datetime objects show me the use of the timedelta module:

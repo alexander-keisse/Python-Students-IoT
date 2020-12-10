@@ -11,7 +11,7 @@ new_line = '\n'
 # First we will need a Path object that represents a directory:
 
 path_python_std_lib_dir = Path('../5-python-standard-lib/')
-path_new_dir = path_python_std_lib_dir / 'resources'
+path_new_dir = path_python_std_lib_dir / 'resources/'
 
 # If you want to see if a certain directory exist you can do it like this:
 
@@ -68,8 +68,8 @@ print(list_dir_cont)
 
 # We can even do filtering on this list comprehension:
 
-files_in_dir = [p for p in path_python_std_lib_dir.iterdir() if p.is_file()]
-sub_dirs_in_dir = [p for p in path_python_std_lib_dir.iterdir() if p.is_dir()]
+files_in_dir = [p for p in list_dir_cont if p.is_file()]
+sub_dirs_in_dir = [p for p in list_dir_cont if p.is_dir()]
 
 # And this way you can recursively search for a certain pattern in a directory, in our case we look for all python
 # related files.

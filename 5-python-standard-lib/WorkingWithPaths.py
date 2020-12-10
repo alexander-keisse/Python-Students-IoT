@@ -17,10 +17,10 @@ new_line = '\n'
 # When creating a Path instance on windows we have 2 options:
 
 # Because Windows uses a backslash as a separator we could use this notation [but not really, it is haaaard]:
-windows_path_1 = Path('C:\\Downloads\\Secret Messages\\secret_vid.mp4')
+windows_path_1 = Path('C:\\Downloads\\secret_vid.mp4')
 
 # Here we are using a raw string, meaning \ is not an escape character, the value given is taken as is!
-windows_path_2 = Path(r'C:\Downloads\Secret Messages\secret_vid.mp4')
+windows_path_2 = Path(r'C:\Downloads\secret_vid.mp4')
 
 # If we dont know where we are in the current folder hierarchy,
 # we can simply make an Path instance without giving it an argument during creation:
@@ -29,7 +29,7 @@ place_in_universe = Path()
 
 # We can also combine Path objects with strings to form a new Path instance as such:
 
-project = Path('/home') / 'eliot' / 'PycharmProjects' / 'python_basics/'
+project = Path('/home') / 'eliot' / 'PycharmProjects' / 'python_basics'
 
 # If you want to know the current home of the user you can use the following method:
 

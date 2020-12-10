@@ -5,12 +5,12 @@ from time import ctime, sleep
 
 new_line = '\n'
 file_name = 'original.txt'
-copy = Path('./copy-txt-files/BlankIntro.txt')
+copy = Path('copy-txt-files/BlankIntro.txt')
 new_file_name = file_name.capitalize()  # A good programmer is a lazy programmer :D
 
 # In this class we will look at the handy methods to handle files with Python:
 
-path = Path('../5-python-standard-lib/txt-files')
+path = Path('txt-files')
 txt_file = path / file_name  # Check WorkingWithPaths.py if this makes no sense ;)
 
 txt_files = [p for p in Path().rglob('*.txt')]
